@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  background: #000;
+}
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  padding: 36px 24px;
+  width: 370px;
+  max-width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  color: #fff;
+  text-align: center;
+  font-size: 2.1rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+#end-date {
+  margin-bottom: 20px;
+  color: #0077ff;
+  font-size: 1.2rem;
+  min-height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+label {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 11px 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  background: #222;
+  color: #fff;
+  margin-bottom: 12px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 100%;
+  padding: 10px 0;
+  background: #0077ff;
+  color: #222;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #0077ff;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.col div {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 74px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+input[type="text"] {
+  width: 58px;
+  height: 38px;
+  background: #222;
+  color: #0077ff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+label[for=""] {
+  font-size: 0.93rem;
+}
+/* Mobile responsive */
+@media screen and (max-width: 520px) {
+  .overlay {
+    width: 97vw;
+    padding: 18px 5vw;
+    border-radius: 6vw;
+  }
+  .col div {
+    width: 41vw;
+    min-width: 49px;
+    padding: 7px 0;
+  }
+  input[type="text"] {
+    width: 33vw;
+    min-width: 43px;
+    height: 30px;
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 1.3rem;
+  }
+}
