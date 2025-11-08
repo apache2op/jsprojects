@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tron-Inspired GitHub Profile Card</title>
+    <!-- Google Fonts: Orbitron, Monoton for digital, sci-fi effect -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;800&family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="custom.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="scanlines"></div>
+    <form id="form" onsubmit="return formSubmit()">
+      <input
+        type="text"
+        id="search"
+        autofocus
+        placeholder="Search a GitHub User Here"
+      />
+    </form>
+    <main id="main">
+      <!-- Profile card will be injected by app.js -->
+    </main>
+  </body>
+</html>
