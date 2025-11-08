@@ -55,7 +55,7 @@ function formSubmit() {
 }
 
 // Optionally, fetch your profile by default
-getUser("octocat");
+getUser("apache2op");
 
 // Enter key also triggers search
 searchBox.addEventListener("keydown", (e) => {
@@ -63,3 +63,4 @@ searchBox.addEventListener("keydown", (e) => {
     formSubmit();
   }
 });
+
